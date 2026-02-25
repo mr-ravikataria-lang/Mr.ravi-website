@@ -77,6 +77,26 @@ background:#00ffcc;
 cursor:pointer;
 border-radius:5px;
 }
+/* Styling for all cards to make them smooth */
+.card, .pricing-card, [style*="background: #1e1e1e"] {
+    transition: all 0.4s ease-in-out !important;
+    cursor: pointer;
+    border: 1px solid #333; /* Default border */
+}
+
+/* The Magic Effect when you hover the mouse */
+.card:hover, .pricing-card:hover, [style*="background: #1e1e1e"]:hover {
+    transform: translateY(-15px) scale(1.03); /* Lifts the card up */
+    box-shadow: 0 15px 40px rgba(0, 255, 204, 0.3) !important; /* Neon Green Glow */
+    border-color: #00ffcc !important; /* Border turns Neon Green */
+}
+
+/* Button animation on hover */
+a:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
 </style>
 </head>
 <body>
